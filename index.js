@@ -37,7 +37,7 @@
 					var description = item.description;
 					var location = item.location;
 					var eventDate = formatDate(eventdate, defaults.dateFormat.trim());
-					s = '<div class="eventdate">' + '\<div style="text-align: left; padding-left: 30px; text-weight:bold' + eventDate + '</div>';
+					s = '<div class="eventdate">' + 'GTdiv style="text-align: left; padding-left: 30px; text-weight:boldLT' + eventDate + '</div>';
 					if(location) {
 						s +='<div class="location">'+ 'div style="text-align: left; padding-left: 60px;"' + location + '</div>';
 					}
