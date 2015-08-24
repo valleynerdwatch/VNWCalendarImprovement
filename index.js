@@ -37,13 +37,13 @@
 					var description = item.description;
 					var location = item.location;
 					var eventDate = formatDate(eventdate, defaults.dateFormat.trim());
-					s = '<div class="eventdate">' + '<<div style="text-align: left; padding-left: 30px; text-weight:bold>>' + eventDate + '<<\/div>>'+'</div>';
+					s = '<div class="eventdate">' + '<<div style="text-align: left; padding-left: 30px; text-weight:bold>>' + eventDate + '</div>';
 					if(location) {
-						s +='<div class="location">'+ '<<div style="text-align: left; padding-left: 60px;">>' location + '<<\/div>>'+'</div>';
+						s +='<div class="location">'+ '<<div style="text-align: left; padding-left: 60px;">>' location + '</div>';
 					}
-					s +='<div class="eventtitle">'+ '<<div style="text-align: left; padding-left: 90px;">>' summary +'<</div>>'+'<\/div>';
+					s +='<div class="eventtitle">'+ '<<div style="text-align: left; padding-left: 90px;">>' summary +'<\/div>';
 					if(description) {
-						s +='<div class="description">'+'<<div style="text-align: left; padding-left: 120px;">>'+ description +'<<\/div>>'+'</div>';
+						s +='<div class="description">'+'<<div style="text-align: left; padding-left: 120px;">>'+ description +'</div>';
 					}
 					$($div).append('<li>' + s + '</li>');
         });
