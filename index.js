@@ -45,7 +45,7 @@
 					if(description) {
 						s +='<div class="description">'+'div style="text-align: left; padding-left: 120px;"'+ description +'</div>';
 					}
-					$($div).append('<li>' + s + '</li>');
+					$($div).append(s);
         });
       },
       error: function(xhr, status) {
