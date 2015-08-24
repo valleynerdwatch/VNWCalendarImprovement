@@ -41,7 +41,7 @@
 					if(location) {
 						s +='<div class="location">'+ '\<div style="text-align: left; padding-left: 60px;"\>' + location + '</div>';
 					}
-					s +='<div class="eventtitle">'+ '\<div style="text-align: left; padding-left: 90px;"\>' + summary +'<\/div>';
+					s +='<div class="eventtitle">'+ '\<div style="text-align: left; padding-left: 90px;"\>' + summary +'</div>';
 					if(description) {
 						s +='<div class="description">'+'\<div style="text-align: left; padding-left: 120px;"\>'+ description +'</div>';
 					}
