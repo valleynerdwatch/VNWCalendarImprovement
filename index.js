@@ -37,7 +37,7 @@
 					var description = item.description;
 					var location = item.location;
 					var eventDate = formatDate(eventdate, defaults.dateFormat.trim());
-					s = '<div class="eventdate">' + '\<div style="text-align: left; padding-left: 30px;' + eventDate + '</div>';
+					s = '<div class="eventdate">' + '&ltdiv style="text-align: left; padding-left: 30px;&gt' + eventDate + '</div>';
 					if(location) {
 						s +='<div class="location">'+ location +'</div>';
 					}
