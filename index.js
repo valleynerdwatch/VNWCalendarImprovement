@@ -34,6 +34,7 @@
         $.each(data.items, function(e, item) {
           var eventdate = item.start.dateTime || item.start.date ||'';
           var summary = item.summary || '';
+          //Think about using a get(color) function to figure out the color-coding of events, use that to insert a header. Maybe like set current_color, previous_color, if they differ, add a heading for a new category based on matching current_color to a set of options. Right now thought it's still a solid tool!
 					var description = item.description;
 					var location = item.location;
 					var eventDate = formatDate(eventdate, defaults.dateFormat.trim());
@@ -43,7 +44,7 @@
 					}
 					s +='<div class="title">'+'[[div style="text-align: left; padding-left: 90px; text-weight:bold;"]]' + summary + '[[/div]]'+'</div>';
 					if(description) {
-						s +='<div class="description">'+'[[div style="text-align: left; padding-left: 60px;"]]'+ description + '[[/div]]'+'</div>';
+						s +='<div class="description">'+'[[div style="text-align: left; padding-left: 120px;"]]'+ description + '[[/div]]'+'</div>';
 					}
 					$($div).append(s);
         });
@@ -110,7 +111,7 @@
           fd = time;
           break;
         case 'ShortDate':
-          fd = month + '/' + dayNum + '/' + year;
+          fd = month + '/' + dayNum + '/';
           break;
         case 'LongDate':
           fd = calendar.days.full[d.getDay()] + ' ' + calendar.months.full[
