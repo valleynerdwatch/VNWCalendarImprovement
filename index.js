@@ -17,7 +17,7 @@
     var s = '';
     var feedUrl = 'https://www.googleapis.com/calendar/v3/calendars/' +
       encodeURIComponent(defaults.calendarId.trim()) +'/events?key=' + defaults.apiKey +
-      '&orderBy=startTime&singleEvents=true';
+      '&orderBy=startTime&singleEvents=true&timeMax=Sys.time';
       if(defaults.futureEventsOnly) {
         feedUrl+='&timeMin='+ new Date().toISOString();
       }
