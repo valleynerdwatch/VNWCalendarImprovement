@@ -20,7 +20,6 @@
       '&orderBy=startTime&singleEvents=true';
       if(defaults.futureEventsOnly) {
         feedUrl+='&timeMin='+ new Date().toISOString();
-        feedUrl+='&timeMax=2015-10-24T23:59:59Z';
       }
 
     $.ajax({
