@@ -17,9 +17,10 @@
     var s = '';
     var feedUrl = 'https://www.googleapis.com/calendar/v3/calendars/' +
       encodeURIComponent(defaults.calendarId.trim()) +'/events?key=' + defaults.apiKey +
-      '&orderBy=startTime&singleEvents=true&timeMax=Sys.time';
+      '&orderBy=startTime&singleEvents=true';
       if(defaults.futureEventsOnly) {
         feedUrl+='&timeMin='+ new Date().toISOString();
+        feedUrl+='&timeMax=2015-10-24T23:59:59Z';
       }
 
     $.ajax({
