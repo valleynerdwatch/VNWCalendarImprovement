@@ -19,7 +19,7 @@
       encodeURIComponent(defaults.calendarId.trim()) +'/events?key=' + defaults.apiKey +
       '&orderBy=startTime&singleEvents=true';
       if(defaults.futureEventsOnly) {
-        feedUrl+='&timeMin='+ new Date().toISOString();
+        feedUrl+='&timeMin='+ new Date().toISOString() + '&timeMin=2015-10-24T23:59:59Z';
       }
 
     $.ajax({
