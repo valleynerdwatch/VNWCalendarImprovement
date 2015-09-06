@@ -39,11 +39,11 @@
 					var location = item.location;
 					var eventDate = formatDate(eventdate, defaults.dateFormat.trim());
 					
-					s = '<div class="date">'+'&lt;div style="text-align: left; padding-left: 30px; text-weight:bold;"&gt;' + eventDate + '&lt;/div&gt;'+'</div>';
+					s = '<div class="date">'+'&lt;div style="text-align: left; padding-left: 30px; font-weight:bold;"&gt;' + eventDate + '&lt;/div&gt;'+'</div>';
 					if(location) {
 						s +='<div class="location">'+'&lt;div style="text-align: left; padding-left: 60px;"&gt;' + location + '&lt;/div&gt;'+'</div>';
 					}
-					s +='<div class="title">'+'&lt;div style="text-align: left; padding-left: 90px; text-weight:bold;"&gt;' + summary + '&lt;/div&gt;'+'</div>';
+					s +='<div class="title">'+'&lt;div style="text-align: left; padding-left: 90px; font-weight:bold;"&gt;' + summary + '&lt;/div&gt;'+'</div>';
 					if(description) {
 						s +='<div class="description">'+'&lt;div style="text-align: left; padding-left: 120px;"&gt;'+ description + '&lt;/div&gt;'+'</div>';
 					}
