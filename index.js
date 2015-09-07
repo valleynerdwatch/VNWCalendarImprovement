@@ -15,11 +15,14 @@
       options);
 
     var s = '';
+    var timeMin = new Date();
+    var timeMax = new Date();
+    timeMax.setDate ( timeMin.getDate() + 7 );
     var feedUrl = 'https://www.googleapis.com/calendar/v3/calendars/' +
       encodeURIComponent(defaults.calendarId.trim()) +'/events?key=' + defaults.apiKey +
       '&orderBy=startTime&singleEvents=true';
       if(defaults.futureEventsOnly) {
-        feedUrl+='&timeMin='+ new Date().toISOString() + '&timeMax=2015-09-13T23:59:59Z';
+        feedUrl+='&timeMin='+ timeMin.toISOString() + '&timeMax=' + timeMaxs.toISOString();
       }
 
     $.ajax({
