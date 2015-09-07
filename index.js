@@ -22,7 +22,7 @@
       encodeURIComponent(defaults.calendarId.trim()) +'/events?key=' + defaults.apiKey +
       '&orderBy=startTime&singleEvents=true';
       if(defaults.futureEventsOnly) {
-        feedUrl+='&timeMin='+ timeMin.toISOString() + '&timeMax=' + timeMaxs.toISOString();
+        feedUrl+='&timeMin='+ timeMin.toISOString() + '&timeMax=' + timeMax.toISOString();
       }
 
     $.ajax({
